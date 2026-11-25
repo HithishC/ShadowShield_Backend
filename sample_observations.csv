@@ -1,0 +1,6 @@
+mac,ip,hostname,vendor,ports,protocols,seen_at
+00:11:22:33:44:01,192.168.10.11,pay-terminal-01,DemoVendor,443,"TCP,DHCP",2026-11-25T10:00:00Z
+00:11:22:33:44:02,192.168.10.12,branch-server-01,DemoVendor,"22,443","TCP,DNS",2026-11-25T10:01:00Z
+00:11:22:33:44:03,192.168.10.13,staff-laptop-01,DemoVendor,443,"TCP,DHCP",2026-11-25T10:02:00Z
+02:AA:BB:CC:DD:EE,192.168.10.99,unknown-device,UnknownVendor,"23,8080","TCP,ARP",2026-11-25T10:05:00Z
+00:11:22:33:44:02,192.168.10.12,branch-server-01,DemoVendor,"22,443,3389","TCP,DNS",2026-11-25T10:06:00Z

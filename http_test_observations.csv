@@ -1,0 +1,6 @@
+
+mac,ip,hostname,vendor,ports,protocols,seen_at
+00:11:22:33:44:01,192.168.10.11,pay-terminal-01,DemoVendor,"80,443","TCP,HTTP,HTTPS",2026-11-25T11:00:00Z
+00:11:22:33:44:02,192.168.10.12,branch-server-01,DemoVendor,"80,8080","TCP,HTTP",2026-11-25T11:01:00Z
+00:11:22:33:44:03,192.168.10.13,staff-laptop-01,DemoVendor,443,"TCP,HTTPS",2026-11-25T11:02:00Z
+02:AA:BB:CC:DD:EE,192.168.10.99,unknown-http-device,UnknownVendor,"80,8080","TCP,HTTP",2026-11-25T11:05:00Z
