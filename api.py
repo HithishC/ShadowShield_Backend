@@ -26,6 +26,7 @@ from shadowshield.detection import analyze_devices
 
 from shadowshield.live_schemas import LiveSessionCreate
 from shadowshield.live_service import LiveDiscoveryService
+from shadowshield.auth import router as auth_router, init_auth_db
 
 
 app = FastAPI(
@@ -33,6 +34,7 @@ app = FastAPI(
     version="1.2.0",
     description="Authorized network analysis and live device discovery API."
 )
+app.include_router(auth_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -48,7 +50,7 @@ live_service = LiveDiscoveryService()
 @app.on_event("startup")
 def startup():
     init_db()
-
+    init_auth_db()
 
 class InventoryDevice(BaseModel):
     mac: str
